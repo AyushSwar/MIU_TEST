@@ -13,7 +13,7 @@ import java.util.*;
 
 public class CompleteArray {
     public static void main(String[] args){
-        int[] arr =  {-5, 6, 2, 3, 2, 4, 5, 11, 8, 7};
+        int[] arr =  {-5, 6, 2, 3, 2, 4, 5, 12, 8, 7};
         System.out.println(isComplete(arr));
     }
 
