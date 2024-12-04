@@ -26,7 +26,7 @@ public class centeredArray {
             return 0;
         }
 
-        int midElement = arr.length / 2; // Middle element index
+        int midElement = arr.length / 2; // Middle element index.
         int midValue = arr[midElement];
 
         for(int i = 0; i < arr.length; i++) {
