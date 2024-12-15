@@ -18,22 +18,23 @@ public class MagicNumbers {
     public static int isMagicArray(int[] a) {
         int sum = 0;
 
-        for (int j : a) {
+        for (int numb : a) {
             if (a[0] == 0) return 0;
-            if (isPrime(j)) {
-                sum += j;
+            if (isPrime(numb)== 1) {
+                sum += numb;
             }
         }
+        System.out.println(sum);
         return (sum == a[0]) ?1 : 0;
     }
     
-    public static boolean isPrime(int num) {
-        if(num <= 1) return false;
+    public static int isPrime(int num) {
+        if(num <= 1) return 0;
         
         for(int i=2; i*i <= num; i++) {
-            if(num % i == 0) return false;   
+            if(num % i == 0) return 0;
         }
-        return true;
+        return 1;
     }
 }
 
@@ -41,3 +42,28 @@ public class MagicNumbers {
 Time Complexity: O(n * √m), where n is the number of elements in the array and m is the value of the largest number in the array.
 Space Complexity: O(1), since the algorithm uses a constant amount of extra space.
 */
+//
+//public static int isMagicArray(int[] a) {
+//    int sum = 0;
+//
+//    for(int i = 1; i < a.length; i++) {
+//        if(isPrime(a[i]) == 1) {
+//            sum += a[i];
+//        }
+//    }
+//
+//    System.out.println(sum);
+//
+//    return (sum == a[0]) ? 1 : 0;
+//}
+//
+//public static int isPrime(int n) {
+//    if (n <= 1 ) return 0;
+//
+//    for (int i=2; i*i <= n ; i++) {
+//        if(n % i == 0) {
+//            return 0;
+//        }
+//    }
+//    return 1;
+//}
